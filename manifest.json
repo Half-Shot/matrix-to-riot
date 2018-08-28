@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Matrix.to Riot",
+  "version": "1.0",
+  "description": "Sends matrix.to requests to your Riot instance.",
+  "icons": {
+
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["matrix-to-riot.js"]
+    }
+  ],
+  "permissions": [
+    "*://riot.im/*",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["request-forwarder.js"]
+  }
+}
