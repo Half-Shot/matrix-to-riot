@@ -18,5 +18,10 @@
   ],
   "background": {
     "scripts": ["request-forwarder.js"]
+  },
+  "applications": {
+    "gecko": {
+      "id": "matrix-to-riot@half-shot.uk"
+    }
   }
 }
